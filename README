@@ -33,4 +33,8 @@ printer/
 the printer side of this world, including job queuing and other
 outsourced printing options
 
+printer/moo
+
+tools for printing; should import this one:
+http://search.cpan.org/dist/Net-Moo/lib/Net/Moo.pm
 
