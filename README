@@ -38,3 +38,8 @@ printer/moo
 tools for printing; should import this one:
 http://search.cpan.org/dist/Net-Moo/lib/Net/Moo.pm
 
+printer/postful
+
+reference this api
+http://postful.com/developer/guide#mail_a_postcard
+http://postful.com/postcard
