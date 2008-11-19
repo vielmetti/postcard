@@ -43,3 +43,8 @@ printer/postful
 reference this api
 http://postful.com/developer/guide#mail_a_postcard
 http://postful.com/postcard
+
+printer/hippopost
+
+no api publicly visible; they advertise some kind of
+system integration for partners
