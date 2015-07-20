@@ -1,0 +1,22 @@
+#!/bin/sh
+
+# lob-address-put
+
+# usage:
+#   lob-address-put $LOB_LIVE_API_KEY mom "Katherine Peters" "600 Brickyard Road" "Marquette" "MI" "49855"
+#
+# the simplest thing that could work, positional parameters.
+
+CURL=curl
+
+$CURL https://api.lob.com/v1/addresses \
+	-u $1 \
+	-d "description=$2" \
+	-d "metadata[tool]=lob-address-put" \
+	-d "metadata[nickname]=$2" \
+	-d "name=$3" \
+	-d "address_line1=$4" \
+	-d "address_city=$5" \
+	-d "address_state=$6" \
+	-d "address_zip=$7" \
+	-d "address_country=US"

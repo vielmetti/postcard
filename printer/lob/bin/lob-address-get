@@ -1,0 +1,15 @@
+#!/bin/sh
+
+# lob-address-get
+
+# usage:
+#   lob-address-get $LOB_LIVE_API_KEY mom 
+#
+# the simplest thing that could work, positional parameters.
+# uses metadata[nickname], picks the most recent one
+
+CURL=curl
+JQ=/usr/local/bin/jq
+
+$CURL -s -g -X GET "https://api.lob.com/v1/addresses/?count=100&offset=1&metadata[nickname]=$2" -u $1 | jq -c -r '.data[].id'
+# $CURL -s -g -X GET "https://api.lob.com/v1/addresses/?count=100&offset=1" -u $1 
