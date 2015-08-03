@@ -1,12 +1,12 @@
 #!/bin/sh
 
-# lob-address-put-detail
+# lob-address-put
 
 # the long version of lob-address-put so I can do people who
 # work at corporations
 
 # usage:
-#   lob-address-put-detail $LOB_LIVE_API_KEY 
+#   lob-address-put $LOB_LIVE_API_KEY 
 #
 # the next simplest thing that could work, reading variable parameters.
 
