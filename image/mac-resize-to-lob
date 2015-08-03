@@ -1,0 +1,11 @@
+#!/bin/sh
+
+# mac-resize-to-lob
+
+# usage:
+#   mac-resize-to-lob original.jpg original-resized.jpg
+
+# note that you might also need to rotate, change formats,
+# and do a thousand other things to make an image perfect
+
+sips -z 1275 1875 "$1" --out "$2"
