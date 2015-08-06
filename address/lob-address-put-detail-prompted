@@ -1,0 +1,36 @@
+#!/bin/sh
+
+# lob-address-put-detail
+
+# the long version of lob-address-put so I can do people who
+# work at corporations
+
+# usage:
+#   lob-address-put-detail $LOB_LIVE_API_KEY 
+#
+# the next simplest thing that could work, reading variable parameters.
+
+CURL=curl
+
+read -e -p "nickname: " lobnickname
+read -e -p "name: " lobname
+read -e -p "company: " lobcompany
+read -e -p "address 1: " lobaddr1
+read -e -p "address 2: " lobaddr2
+read -e -p "city: " lobcity
+read -e -p "state: " lobstate
+read -e -p "zip: " lobzip
+
+$CURL https://api.lob.com/v1/addresses \
+	-u $1 \
+	-d "description=$lobnickname" \
+	-d "metadata[tool]=lob-address-put-detail" \
+	-d "metadata[nickname]=$lobnickname" \
+	-d "name=$lobname" \
+	-d "company=$lobcompany" \
+	-d "address_line1=$lobaddr1" \
+	-d "address_line2=$lobaddr2" \
+	-d "address_city=$lobcity" \
+	-d "address_state=$lobstate" \
+	-d "address_zip=$lobzip" \
+	-d "address_country=US"
