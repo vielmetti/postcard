@@ -36,7 +36,14 @@ the screen, to support the "--message" option.
 
 ### qsl/
 
-specific tools for formatting QSL cards for amateur radio use.
+specific tools for formatting QSL cards for amateur radio use; something like this, probably
+
+```
+qsl --to KB8NU --photo out-for-a-walk.jpg --date 20160102T11:30:00-05:00 --rig "Baofeng UV-5R" --antenna "Nagoya NA-771" --frequency "145.23" --repeater W8UM --signal 59 --text "Good to talk to you and Ralph AA8RK" --73 KD8OQG
+qsl --interactive
+```
+
+it probably should also interact with other amateur radio command line logbook tools.
 
 ### printer/
 
