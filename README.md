@@ -34,6 +34,10 @@ should include some use of "sips" for image resizing on mac, plus whatever the l
 tools for turning text into lovely text for the text side of
 the screen, to support the "--message" option.
 
+### qsl/
+
+specific tools for formatting QSL cards for amateur radio use.
+
 ### printer/
 
 the printer side of this world, including job queuing and other
