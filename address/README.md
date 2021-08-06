@@ -16,4 +16,5 @@ to go in and out of Outlook formatted CSV files since that's a format
 also supported by Google Contacts.
 
 Lob has a limit on the size of the address book, based on the plan
-that you use.
+that you use. The developer limit is 10000 addresses, which should be
+plenty.
