@@ -1,0 +1,7 @@
+#!/bin/bash
+#
+# lob-address-get $LOB_LIVE_API_KEY nickname
+
+CURL=/usr/bin/curl
+
+$CURL -X GET "https://api.lob.com/v1/addresses/?limit=1&metadata[nickname]="$2 -u $1
